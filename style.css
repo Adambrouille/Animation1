@@ -1,37 +1,38 @@
 .contain{
-    margin-top: 20%;
-    margin-right: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15%;
 }
-.cube{
-    margin-left: 600px;
+.contain .cube{
+    background-color:dimgrey;
     height: 100px;
     width: 100px;
-    background-color: brown;
-    animation: translation 15s;
+    animation: translation 15s infinite ease-in;
 }
 @keyframes translation{
     0%{
-        transform: translatex(500px);
+        transform: translatex(100%);
     }
     10%{
-        transform: translateY(60px);
+        transform: translateY(-100%);
     }
     20%{
-        transform: translatex(300px);
+        transform: translatex(40%);
     }
     30%{
-        transform: translateY(200px);
+        transform: translateY(-60%);
     }
     40%{
-        transform: translatex(700px);
+        transform: translatex(20rem);
     }
     60%{
-        transform: translatex(500px);
+        transform: translatex(-30rem);
     }
     80%{
-        transform: translatey(-50px);
+        transform: translatey(10rem);
     }
     100%{
-        transform: translatey(90px);
+        transform: translatey(-10rem);
     }
 }
